@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -27,6 +28,13 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+              </div>
+
+              {/* Add the News button here */}
+              <div style={{ marginTop: 20 }}>
+                <Link to="/news">
+                  <button className="btn btn-primary">Latest News</button>
+                </Link>
               </div>
             </Col>
 
