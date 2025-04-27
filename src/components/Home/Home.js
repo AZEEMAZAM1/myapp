@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom"; // Import Link for navigation
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -13,30 +12,20 @@ function Home() {
         <Particle />
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
-
-              <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Muhammmad Azeem</strong>
-              </h1>
-
-              <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
-              </div>
-
-              {/* Add the News button here */}
-              <div style={{ marginTop: 20 }}>
-                <Link to="/news">
-                  <button className="btn btn-primary">Latest News</button>
-                </Link>
-              </div>
-            </Col>
+          <Col md={7} className="home-header">
+  {/* Replace the text with the transparent picture */}
+  <div style={{ textAlign: "center" }}>
+    <img
+      src={require("../../Assets/pic.png")} // Adjust the path to your image
+      alt="Transparent"
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+        opacity: 0.8, // Set transparency
+      }}
+    />
+  </div>
+</Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
