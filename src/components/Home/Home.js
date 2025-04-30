@@ -13,19 +13,22 @@ function Home() {
         <Container className="home-content">
           <Row>
           <Col md={7} className="home-header">
-  {/* Replace the text with the transparent picture */}
-  <div style={{ textAlign: "center" }}>
-    <img
-      src={require("../../Assets/pic.png")} // Adjust the path to your image
-      alt="Transparent"
-      style={{
-        maxWidth: "100%",
-        height: "auto",
-        opacity: 0.8, // Set transparency
-      }}
-    />
-  </div>
-</Col>
+              <h1 style={{ paddingBottom: 15,color:'yellow' }} className="heading">
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
+              </h1>
+
+              <h1 className="heading-name" style={{ color: "#ff5733" }}>
+                I'M
+                <strong className="main-name"style={{ color: "#ff5533" }}> MUHAMMAD AZEEM</strong>
+              </h1>
+
+              <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
+              </div>
+            </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img

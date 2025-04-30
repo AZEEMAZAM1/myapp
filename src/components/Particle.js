@@ -122,7 +122,7 @@ function Particle() {
         retina_detect: true,
         background: {
           color: {
-            value: "#001F3F", // Set background color to dark navy blue
+            value: "transparent", // Set background color to dark navy blue
           },
         },
       }}
